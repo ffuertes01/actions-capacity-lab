@@ -1,0 +1,11 @@
+# .github/workflows/baseline.yml
+name: baseline
+on:
+  workflow_dispatch:
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simular trabajo (30s)
+        run: sleep 30 && echo "baseline ok"
